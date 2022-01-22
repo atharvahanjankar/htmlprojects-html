@@ -2,15 +2,20 @@
 <html>
     <head>
         <title>Marksheet Page</title>
+        <link rel="stylesheet" href="index.css">
     </head>
-    <body>
-        <form>
-            <label>Enter Roll number:</label>
-            <input id="inpRollNo" type="number" >
-            <input type="button" value="submit" onclick="iframee()">
-            <input type="text" id="ans">
-        </form>
-        <iframe src="" id="changeValue"></iframe>
+    <body id="mainpage">
+        <div class="mainContainer">
+            <form class="bccolor">
+                <label class="lableStyling">Enter Roll number:</label>
+                <br/><br/>
+                <input id="inpRollNo" type="number" class="inpnum">
+                <br/><br/>
+                <input type="button" value="Submit" onclick="iframee()" class="btn">
+                <!-- <input type="text" id="ans"> -->
+                <span id="display"></span>
+            </form>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
